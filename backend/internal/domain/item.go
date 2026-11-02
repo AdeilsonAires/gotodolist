@@ -6,7 +6,7 @@ import (
 	"gorm.io/gorm"
 )
 
-type Task struct {
+type Item struct {
 	ID        uint           `json:"id" gorm:"primaryKey;not null"`
 	ListID    uint           `json:"list_id" gorm:"not null"`
 	Name      string         `json:"name" validate:"required,min=3,max=25" gorm:"not null"`
